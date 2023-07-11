@@ -16,6 +16,7 @@ namespace FunctionalPrograms
                 Console.WriteLine("2- Leap Year");
                 Console.WriteLine("3- Power of two");
                 Console.WriteLine("4-Harmonic number");
+                Console.WriteLine("5- Factors of Number");
                 Console.WriteLine("Choose above option");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -35,6 +36,10 @@ namespace FunctionalPrograms
                     case 4:
                         Harmonic harmonic = new Harmonic();
                         harmonic.Series();
+                        break;
+                        case 5:
+                            Factors factors = new Factors();
+                        factors.FactorsOfnumber();
                         break;
                     default:
                         Console.WriteLine("Invalide option");
