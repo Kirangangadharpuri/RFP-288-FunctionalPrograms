@@ -15,6 +15,7 @@ namespace FunctionalPrograms
                 Console.WriteLine("1- Flip Coin");
                 Console.WriteLine("2- Leap Year");
                 Console.WriteLine("3- Power of two");
+                Console.WriteLine("4-Harmonic number");
                 Console.WriteLine("Choose above option");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -28,8 +29,12 @@ namespace FunctionalPrograms
                         leapYear.Year();
                         break;
                     case 3:
-                            Power power = new Power();
+                        Power power = new Power();
                         power.PowerOftwo();
+                        break;
+                    case 4:
+                        Harmonic harmonic = new Harmonic();
+                        harmonic.Series();
                         break;
                     default:
                         Console.WriteLine("Invalide option");
