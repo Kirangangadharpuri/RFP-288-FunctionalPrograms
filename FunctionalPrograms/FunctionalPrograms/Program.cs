@@ -14,6 +14,7 @@ namespace FunctionalPrograms
             {
                 Console.WriteLine("1- Flip Coin");
                 Console.WriteLine("2- Leap Year");
+                Console.WriteLine("3- Power of two");
                 Console.WriteLine("Choose above option");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -25,6 +26,10 @@ namespace FunctionalPrograms
                     case 2:
                         LeapYear leapYear = new LeapYear();
                         leapYear.Year();
+                        break;
+                    case 3:
+                            Power power = new Power();
+                        power.PowerOftwo();
                         break;
                     default:
                         Console.WriteLine("Invalide option");
