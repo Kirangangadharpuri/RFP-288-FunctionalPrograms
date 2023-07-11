@@ -19,6 +19,7 @@ namespace FunctionalPrograms
                 Console.WriteLine("5- Factors of Number");
                 Console.WriteLine("6-Questient and Reminder");
                 Console.WriteLine("7-Swap two number");
+                Console.WriteLine("8-Even or Odd");
                 Console.WriteLine("Choose above option");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -50,6 +51,10 @@ namespace FunctionalPrograms
                     case 7:
                         Swap swap = new Swap();
                         swap.SwapTwoNumbers();
+                        break;
+                    case 8:
+                            EvenOdd evenOdd = new EvenOdd();
+                        evenOdd.FindEvenOdd();
                         break;
                     default:
                         Console.WriteLine("Invalide option");
