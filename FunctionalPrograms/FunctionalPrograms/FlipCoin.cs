@@ -10,8 +10,8 @@ namespace FunctionalPrograms
     {
         public void Display()
         {
-            Random r = new Random();
-            int flip = r.Next(3);
+            Random random = new Random();
+            int flip = random.Next(3);
             Console.WriteLine(flip);
             if (flip == 0)
             {
