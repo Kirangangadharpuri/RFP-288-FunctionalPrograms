@@ -17,6 +17,7 @@ namespace FunctionalPrograms
                 Console.WriteLine("3- Power of two");
                 Console.WriteLine("4-Harmonic number");
                 Console.WriteLine("5- Factors of Number");
+                Console.WriteLine("6-Questient and Reminder");
                 Console.WriteLine("Choose above option");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -37,9 +38,13 @@ namespace FunctionalPrograms
                         Harmonic harmonic = new Harmonic();
                         harmonic.Series();
                         break;
-                        case 5:
+                    case 5:
                             Factors factors = new Factors();
                         factors.FactorsOfnumber();
+                        break;
+                    case 6:
+                        Division division = new Division();
+                        division.DivisionOfNumber();
                         break;
                     default:
                         Console.WriteLine("Invalide option");
