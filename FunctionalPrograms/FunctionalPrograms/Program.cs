@@ -21,6 +21,7 @@ namespace FunctionalPrograms
                 Console.WriteLine("7-Swap two number");
                 Console.WriteLine("8-Even or Odd");
                 Console.WriteLine("9- Check Alphabet");
+                Console.WriteLine("10- Find largest Number");
                 Console.WriteLine("Choose above option");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -60,6 +61,10 @@ namespace FunctionalPrograms
                     case 9:
                         Alphabets alphabets = new Alphabets();
                         alphabets.Consonanat_Vowel();
+                        break;
+                    case 10:
+                        LargestNumber largestNumber = new LargestNumber();
+                        largestNumber.Numbers();
                         break;
                     default:
                         Console.WriteLine("Invalide option");
