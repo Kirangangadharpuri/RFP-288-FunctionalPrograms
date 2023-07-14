@@ -20,6 +20,7 @@ namespace FunctionalPrograms
                 Console.WriteLine("6-Questient and Reminder");
                 Console.WriteLine("7-Swap two number");
                 Console.WriteLine("8-Even or Odd");
+                Console.WriteLine("9- Check Alphabet");
                 Console.WriteLine("Choose above option");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch(option)
@@ -53,8 +54,12 @@ namespace FunctionalPrograms
                         swap.SwapTwoNumbers();
                         break;
                     case 8:
-                            EvenOdd evenOdd = new EvenOdd();
+                        EvenOdd evenOdd = new EvenOdd();
                         evenOdd.FindEvenOdd();
+                        break;
+                    case 9:
+                        Alphabets alphabets = new Alphabets();
+                        alphabets.Consonanat_Vowel();
                         break;
                     default:
                         Console.WriteLine("Invalide option");
